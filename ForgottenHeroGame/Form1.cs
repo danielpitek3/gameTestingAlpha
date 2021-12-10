@@ -121,6 +121,8 @@ namespace ForgottenHeroGame
                         gameOver.Visible = true;
                         
                     }
+                    
+
                 }
             }
             

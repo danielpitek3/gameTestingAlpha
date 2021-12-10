@@ -41,21 +41,23 @@
             this.obstacle1 = new System.Windows.Forms.PictureBox();
             this.fhero = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.obstacle5 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.obstacle3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.obstacle2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.obstacle1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fhero)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.obstacle5)).BeginInit();
             this.SuspendLayout();
             // 
             // scoreText
             // 
             this.scoreText.AutoSize = true;
-            this.scoreText.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.scoreText.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.scoreText.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.scoreText.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.scoreText.Location = new System.Drawing.Point(338, 9);
+            this.scoreText.ForeColor = System.Drawing.Color.DarkOrchid;
+            this.scoreText.Location = new System.Drawing.Point(328, 9);
             this.scoreText.Name = "scoreText";
             this.scoreText.Size = new System.Drawing.Size(211, 55);
             this.scoreText.TabIndex = 4;
@@ -145,7 +147,7 @@
             // 
             this.obstacle1.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.obstacle1.Image = global::ForgottenHeroGame.Properties.Resources.ground2;
-            this.obstacle1.Location = new System.Drawing.Point(574, 360);
+            this.obstacle1.Location = new System.Drawing.Point(577, 361);
             this.obstacle1.Name = "obstacle1";
             this.obstacle1.Size = new System.Drawing.Size(101, 14);
             this.obstacle1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -175,12 +177,24 @@
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
             // 
+            // obstacle5
+            // 
+            this.obstacle5.BackColor = System.Drawing.Color.IndianRed;
+            this.obstacle5.Location = new System.Drawing.Point(135, 319);
+            this.obstacle5.Name = "obstacle5";
+            this.obstacle5.Size = new System.Drawing.Size(89, 14);
+            this.obstacle5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.obstacle5.TabIndex = 12;
+            this.obstacle5.TabStop = false;
+            this.obstacle5.Tag = "obstacle";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(882, 497);
+            this.Controls.Add(this.obstacle5);
             this.Controls.Add(this.speed);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.obstacle3);
@@ -202,6 +216,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.obstacle1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fhero)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.obstacle5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -221,6 +236,7 @@
         private System.Windows.Forms.Label speedInfo;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label speed;
+        private System.Windows.Forms.PictureBox obstacle5;
     }
 }
 
