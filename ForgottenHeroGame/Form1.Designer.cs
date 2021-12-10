@@ -40,6 +40,7 @@
             this.obstacle1 = new System.Windows.Forms.PictureBox();
             this.fhero = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.speed = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.obstacle3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.obstacle2)).BeginInit();
@@ -156,12 +157,22 @@
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
             // 
+            // speed
+            // 
+            this.speed.AutoSize = true;
+            this.speed.Font = new System.Drawing.Font("Notram", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.speed.Location = new System.Drawing.Point(13, 14);
+            this.speed.Name = "speed";
+            this.speed.Size = new System.Drawing.Size(0, 23);
+            this.speed.TabIndex = 10;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(955, 497);
+            this.Controls.Add(this.speed);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.obstacle3);
             this.Controls.Add(this.obstacle2);
@@ -200,6 +211,7 @@
         private System.Windows.Forms.PictureBox obstacle3;
         private System.Windows.Forms.Label speedInfo;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label speed;
     }
 }
 
