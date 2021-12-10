@@ -64,8 +64,10 @@
             // gameEnd
             // 
             this.gameEnd.AutoSize = true;
+            this.gameEnd.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.gameEnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gameEnd.Location = new System.Drawing.Point(302, 93);
+            this.gameEnd.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.gameEnd.Location = new System.Drawing.Point(256, 93);
             this.gameEnd.Name = "gameEnd";
             this.gameEnd.Size = new System.Drawing.Size(0, 55);
             this.gameEnd.TabIndex = 5;
@@ -73,8 +75,10 @@
             // gameOver
             // 
             this.gameOver.AutoSize = true;
+            this.gameOver.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.gameOver.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gameOver.Location = new System.Drawing.Point(333, 208);
+            this.gameOver.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.gameOver.Location = new System.Drawing.Point(303, 208);
             this.gameOver.Name = "gameOver";
             this.gameOver.Size = new System.Drawing.Size(0, 29);
             this.gameOver.TabIndex = 6;
@@ -141,9 +145,9 @@
             // 
             this.obstacle1.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.obstacle1.Image = global::ForgottenHeroGame.Properties.Resources.ground2;
-            this.obstacle1.Location = new System.Drawing.Point(550, 360);
+            this.obstacle1.Location = new System.Drawing.Point(574, 360);
             this.obstacle1.Name = "obstacle1";
-            this.obstacle1.Size = new System.Drawing.Size(130, 21);
+            this.obstacle1.Size = new System.Drawing.Size(101, 14);
             this.obstacle1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.obstacle1.TabIndex = 2;
             this.obstacle1.TabStop = false;
@@ -164,7 +168,7 @@
             // 
             this.pictureBox2.BackgroundImage = global::ForgottenHeroGame.Properties.Resources.secondbackground__1_;
             this.pictureBox2.Image = global::ForgottenHeroGame.Properties.Resources.background;
-            this.pictureBox2.Location = new System.Drawing.Point(-1, -25);
+            this.pictureBox2.Location = new System.Drawing.Point(-2, -3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(884, 510);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
