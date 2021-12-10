@@ -108,13 +108,14 @@ namespace ForgottenHeroGame
                             gameOver.Text = "Level: Pro - Press R";
                             isGameOver = true;
                         }
-                        else if (score > 30)
+                        else if (score < 50)
                         {
                             gameEnd.Text = "- GAME OVER -";
                             scoreText.Text = "Score : " + score;
-                            gameOver.Text = "Level: Insane - Press R";
+                            gameOver.Text = "Level: Unreal - Press R";
                             isGameOver = true;
                         }
+                        
                         gameEnd.BringToFront();
                         gameOver.BringToFront();
                         gameEnd.Visible = true;
@@ -146,10 +147,20 @@ namespace ForgottenHeroGame
                 speed.Text = " ";
                 obstacleSpeed = 15;
             }
-            else if (score < 50)
+            else if (score < 40)
             {
                 speed.Text = "Speed: 1.50x"; // highest speed
                 obstacleSpeed = 20;
+            }
+            else if (score == 40)
+            {
+                speed.Text = " ";
+                obstacleSpeed = 15;
+            }
+            else if (score < 50)
+            {
+                speed.Text = "Speed: 1.75x"; // highest speed
+                obstacleSpeed = 25;
             }
         }
 

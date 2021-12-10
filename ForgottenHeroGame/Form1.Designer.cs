@@ -180,9 +180,9 @@
             // obstacle5
             // 
             this.obstacle5.BackColor = System.Drawing.Color.IndianRed;
-            this.obstacle5.Location = new System.Drawing.Point(135, 319);
+            this.obstacle5.Location = new System.Drawing.Point(135, 323);
             this.obstacle5.Name = "obstacle5";
-            this.obstacle5.Size = new System.Drawing.Size(89, 14);
+            this.obstacle5.Size = new System.Drawing.Size(46, 10);
             this.obstacle5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.obstacle5.TabIndex = 12;
             this.obstacle5.TabStop = false;
