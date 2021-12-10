@@ -34,13 +34,13 @@
             this.gameOver = new System.Windows.Forms.Label();
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
             this.speedInfo = new System.Windows.Forms.Label();
+            this.speed = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.obstacle3 = new System.Windows.Forms.PictureBox();
             this.obstacle2 = new System.Windows.Forms.PictureBox();
             this.obstacle1 = new System.Windows.Forms.PictureBox();
             this.fhero = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.speed = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.obstacle3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.obstacle2)).BeginInit();
@@ -52,8 +52,10 @@
             // scoreText
             // 
             this.scoreText.AutoSize = true;
+            this.scoreText.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.scoreText.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.scoreText.Location = new System.Drawing.Point(365, 9);
+            this.scoreText.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.scoreText.Location = new System.Drawing.Point(338, 9);
             this.scoreText.Name = "scoreText";
             this.scoreText.Size = new System.Drawing.Size(211, 55);
             this.scoreText.TabIndex = 4;
@@ -92,6 +94,15 @@
             this.speedInfo.Size = new System.Drawing.Size(0, 20);
             this.speedInfo.TabIndex = 8;
             // 
+            // speed
+            // 
+            this.speed.AutoSize = true;
+            this.speed.Font = new System.Drawing.Font("Notram", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.speed.Location = new System.Drawing.Point(13, 14);
+            this.speed.Name = "speed";
+            this.speed.Size = new System.Drawing.Size(0, 23);
+            this.speed.TabIndex = 10;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonShadow;
@@ -104,7 +115,7 @@
             // 
             // obstacle3
             // 
-            this.obstacle3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.obstacle3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.obstacle3.Image = global::ForgottenHeroGame.Properties.Resources.spike_D1;
             this.obstacle3.Location = new System.Drawing.Point(363, 370);
             this.obstacle3.Name = "obstacle3";
@@ -116,8 +127,9 @@
             // 
             // obstacle2
             // 
+            this.obstacle2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.obstacle2.Image = global::ForgottenHeroGame.Properties.Resources.enemy1;
-            this.obstacle2.Location = new System.Drawing.Point(889, 383);
+            this.obstacle2.Location = new System.Drawing.Point(816, 381);
             this.obstacle2.Name = "obstacle2";
             this.obstacle2.Size = new System.Drawing.Size(30, 32);
             this.obstacle2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -139,7 +151,7 @@
             // 
             // fhero
             // 
-            this.fhero.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.fhero.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.fhero.Image = global::ForgottenHeroGame.Properties.Resources._61b29c10ec405471210804;
             this.fhero.Location = new System.Drawing.Point(48, 370);
             this.fhero.Name = "fhero";
@@ -151,27 +163,20 @@
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImage = global::ForgottenHeroGame.Properties.Resources.secondbackground__1_;
-            this.pictureBox2.Location = new System.Drawing.Point(-1, -8);
+            this.pictureBox2.Image = global::ForgottenHeroGame.Properties.Resources.background;
+            this.pictureBox2.Location = new System.Drawing.Point(-1, -25);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(956, 493);
+            this.pictureBox2.Size = new System.Drawing.Size(884, 510);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
-            // 
-            // speed
-            // 
-            this.speed.AutoSize = true;
-            this.speed.Font = new System.Drawing.Font("Notram", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.speed.Location = new System.Drawing.Point(13, 14);
-            this.speed.Name = "speed";
-            this.speed.Size = new System.Drawing.Size(0, 23);
-            this.speed.TabIndex = 10;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(955, 497);
+            this.ClientSize = new System.Drawing.Size(882, 497);
             this.Controls.Add(this.speed);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.obstacle3);
