@@ -23,21 +23,11 @@ namespace ForgottenHeroGame
         int position;
         bool isGameOver = false;
         bool isStep = false;
-        SoundPlayer soundPlayer = new SoundPlayer();
+        
         public Form1()
         {
             InitializeComponent();
-            
-            try
-            {
-                soundPlayer.SoundLocation = "music.wav";
-                soundPlayer.PlayLooping();
-            }catch(Exception e)
-            {
-                MessageBox.Show(e.ToString());
-            }
-
-            
+                        
         }
 
         private void gameTimerEvent(object sender, EventArgs e)
@@ -129,7 +119,7 @@ namespace ForgottenHeroGame
                         gameOver.BringToFront();
                         gameEnd.Visible = true;
                         gameOver.Visible = true;
-                        soundPlayer.Stop();
+                        
                     }
                 }
             }
@@ -217,7 +207,7 @@ namespace ForgottenHeroGame
         private void GameReset()
         {
             // Game reset //
-            soundPlayer.Play();
+            
             force = 12;
             jumpSpeed = 0;
             jumping = false;
